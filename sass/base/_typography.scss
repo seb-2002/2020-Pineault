@@ -33,13 +33,13 @@
 
 body{
     font-family: $fontFamily-body;
-    font-size: $fontSize-body;
+    font-size: $fontSize-small;
 }
 
 .footer{
   &__content{
     &--title{
-      font-size: $fontSize-titles;
+      font-size: $fontSize-body;
     }
   }
 }
