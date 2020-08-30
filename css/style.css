@@ -1,0 +1,140 @@
+*,
+*::after,
+*::before {
+  /*this universal selector does a reset so that
+	we're not working with diverse browser defaults*/
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  /*border-box means the borders and the paddings are
+	no longer added to the total width and height we
+	specify of a box*/ }
+
+html {
+  font-size: 62.5%;
+  /* good strategy because we just have to divide the px measurements to rem. 62.5% of 16px, the default, is 10px */ }
+
+body {
+  box-sizing: border-box;
+  position: relative;
+  width: 100%; }
+
+@font-face {
+  font-family: 'HKSentiments-Regular';
+  src: url("../font/hk_sentiments/HKSentiments-Regular.eot");
+  /* IE9 Compat Modes */
+  src: url("../font/hk_sentiments/HKSentiments-Regular.woff2") format("woff2"), url("font/hk_sentiments/HKSentiments-Regular.woff") format("woff");
+  /* Pretty Modern Browsers */ }
+
+@font-face {
+  font-family: 'HKSentiments-Black';
+  src: url("../font/hk_sentiments/HKSentiments-Black.eot");
+  /* IE9 Compat Modes */
+  src: url("../font/hk_sentiments/HKSentiments-Black.woff2") format("woff2"), url("../font/hk_sentiments/HKSentiments-Black.woff") format("woff");
+  /* Pretty Modern Browsers */ }
+
+@font-face {
+  font-family: 'HKSentiments-Medium';
+  src: url("../font/hk_sentiments/HKSentiments-Medium.eot");
+  /* IE9 Compat Modes */
+  src: url("../font/hk_sentiments/HKSentiments-Medium.woff2") format("woff2"), url("../font/hk_sentiments/HKSentiments-Medium.woff") format("woff");
+  /* Pretty Modern Browsers */ }
+
+@font-face {
+  font-family: 'HKSentiments-Light';
+  src: url("../font/hk_sentiments/HKSentiments-Light.eot");
+  /* IE9 Compat Modes */
+  src: url("../font/hk_sentiments/HKSentiments-Light.woff2") format("woff2"), url("../font/hk_sentiments/HKSentiments-Light.woff") format("woff");
+  /* Pretty Modern Browsers */ }
+
+@font-face {
+  font-family: 'HKSentiments-Bold';
+  src: url("../font/hk_sentiments/HKSentiments-Bold.eot");
+  /* IE9 Compat Modes */
+  src: url("../font/hk_sentiments/HKSentiments-Bold.woff2") format("woff2"), url("../font/hk_sentiments/HKSentiments-Bold.woff") format("woff");
+  /* Pretty Modern Browsers */ }
+
+body {
+  font-family: "HKSentiments-Regular", sans-serif;
+  font-size: 1rem; }
+
+.footer__content--title {
+  font-size: 2rem; }
+
+.content .table-container .table-item {
+  color: grey;
+  transition: all 1s ease;
+  padding: .25rem 0;
+  margin-bottom: 0px;
+  font-size: 1rem; }
+  .content .table-container .table-item:hover {
+    color: #ffdd00;
+    transform: scale(1.5); }
+
+@keyframes moveInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(3rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+.content {
+  height: 100%;
+  position: absolute;
+  top: 0; }
+  .content .table-container {
+    position: fixed;
+    width: 75%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden; }
+    .content .table-container .table-item {
+      overflow: hidden; }
+    .content .table-container hr {
+      border: 0;
+      height: 1px;
+      background: #333;
+      background-image: linear-gradient(to right, #ccc, #333, #ccc); }
+
+.footer {
+  margin: 0 5%;
+  animation: moveInUp .5s ease-out .75s;
+  animation-fill-mode: backwards;
+  animation-delay: 7s;
+  pointer-events: none; }
+
+div[class^="img"] {
+  background-size: cover;
+  width: 100%;
+  max-width: 100%;
+  z-index: 1000;
+  position: relative;
+  pointer-events: none; }
+
+.img-top {
+  height: 211vw;
+  background-image: url(../../img/top_for_html.png); }
+
+.img-btm {
+  background-image: url(../../img/bottom_for_html.png);
+  height: 51.83vw; }
+
+.header__img,
+.coloph .btm__img {
+  width: 100%;
+  max-width: 100%;
+  position: relative;
+  z-index: 1000; }
+
+.coloph {
+  background-color: #f6f6f6; }
+
+.red-button {
+  width: 50%;
+  height: 50%;
+  position: fixed;
+  background-color: red; }
+  .red-button:hover {
+    background-color: rebeccapurple; }
