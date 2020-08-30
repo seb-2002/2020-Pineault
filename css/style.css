@@ -70,7 +70,7 @@ body {
   font-size: 2rem; }
   .content .table-container .table-item:hover {
     color: #ffdd00;
-    transform: scale(1.5); }
+    transform: scale(1.01) translateY(-0.01rem); }
 
 @keyframes moveInUp {
   0% {
@@ -102,6 +102,7 @@ body {
 
 .footer {
   margin: 0 5%;
+  padding-bottom: 5%;
   pointer-events: none; }
 
 div[class^="img"] {

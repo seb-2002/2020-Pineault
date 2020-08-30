@@ -54,8 +54,8 @@ body{
   font-size: $fontSize-body;
 &:hover{
  color: $col-hover;
- transform: scale(1.5);
-}
+ transform: scale(1.01) translateY(-.01rem);
+} 
 }
 }
 }
