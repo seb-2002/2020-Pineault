@@ -48,13 +48,13 @@ body{
  .table-container{
 .table-item{
   color: $col-text-table;
-  transition: all 1s ease;
+  transition: all .1s ease;
   padding: .25rem 0;
   margin-bottom: 0px;
   font-size: $fontSize-body;
 &:hover{
  color: $col-hover;
- transform: scale(1.01) translateY(-.01rem);
+ //transform: scale(1.01) translateY(-.01rem);
 } 
 }
 }

@@ -64,13 +64,12 @@ body {
 
 .content .table-container .table-item {
   color: grey;
-  transition: all 1s ease;
+  transition: all .1s ease;
   padding: .25rem 0;
   margin-bottom: 0px;
   font-size: 2rem; }
   .content .table-container .table-item:hover {
-    color: #ffdd00;
-    transform: scale(1.01) translateY(-0.01rem); }
+    color: #ffdd00; }
 
 @keyframes moveInUp {
   0% {
