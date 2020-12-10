@@ -1,29 +1,26 @@
-.content{
-    height: 100%;
-    position: absolute;
-    top: 0;
-   
+.content {
+  height: 100%;
+  position: absolute;
+  top: 0;
 
-
-.table-container{
+  .table-container {
     position: fixed;
-   width: 75%;
-     top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  overflow: hidden;
+    width: 85%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
 
-
-.table-item{
-overflow: hidden;
-cursor: $main-cursor;
-}
-hr{
-    border: 0;
-    height: 1px;
-    background: #333;
-    background-image: linear-gradient(to right, #ccc, #333, #ccc);
-
-}
-}
+    .table-item {
+      overflow: hidden;
+      cursor: $main-cursor;
+      text-align: center;
+    }
+    hr {
+      border: 0;
+      height: 1px;
+      background: #333;
+      background-image: linear-gradient(to right, #ccc, #333, #ccc);
+    }
+  }
 }

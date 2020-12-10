@@ -36,17 +36,17 @@ body {
 
 body {
   font-family: "NeueMontreal-Regular", sans-serif;
-  font-size: 1.5rem; }
+  font-size: 1.2rem; }
 
 .footer__content--title {
-  font-size: 2rem; }
+  font-size: 1.2rem; }
 
 .content .table-container .table-item {
   color: grey;
   transition: all 0.3s ease;
   padding: 0.25rem 0;
   margin-bottom: 0px;
-  font-size: 2rem; }
+  font-size: 1.2rem; }
   .content .table-container .table-item:hover {
     color: #ffdd00; }
 
@@ -64,14 +64,15 @@ body {
   top: 0; }
   .content .table-container {
     position: fixed;
-    width: 75%;
+    width: 85%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     overflow: hidden; }
     .content .table-container .table-item {
       overflow: hidden;
-      cursor: default; }
+      cursor: default;
+      text-align: center; }
     .content .table-container hr {
       border: 0;
       height: 1px;
